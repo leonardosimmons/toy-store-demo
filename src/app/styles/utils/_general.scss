@@ -1,0 +1,30 @@
+//* -------------------- GENERAL -------------------- *//
+// hides element
+.hidden {
+  display: none;
+}
+
+// disables users ability to select/highlight a particular element
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+// sets elements position to relative
+.relative {
+  position: relative;
+}
+
+//* ---------------------- ID's --------------------- *//
+#top-of-site-pixel-anchor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 2px;
+  left: 0;
+}
