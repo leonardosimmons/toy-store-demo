@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggingService } from 'src/app/modules/base/services/logging.service';
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loggingService: LoggingService) { }
 
   ngOnInit(): void {
+    this.loggingService.statusChange('Test log')
   }
 
 }
